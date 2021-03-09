@@ -120,7 +120,7 @@ void Computation(AcousticSecondGrid *grid,
 
 #pragma vector aligned
 #pragma vector vecremainder
-#pragma omp simd
+/*#pragma omp simd*/
 #pragma ivdep
               for (int ix = 0; ix < ixEnd; ++ix) {
                 // Calculate the finite difference using sequence of fma
