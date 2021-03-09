@@ -148,7 +148,7 @@ void Computation(StaggeredGrid *grid,
               vel_z = particle_vel_z + offset;
 #pragma vector aligned
 #pragma vector vecremainder
-#pragma omp simd
+/*#pragma omp simd*/
 #pragma ivdep
               for (int ix = 0; ix < ixEnd; ++ix) {
                 float value_x = 0;
